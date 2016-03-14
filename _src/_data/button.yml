@@ -1,0 +1,19 @@
+base_button:
+    - name: （默认样式）Default
+      key: 'btn-default'
+      var : '@button-default'
+    - name: （首选项）Primary
+      key: 'btn-primary'
+      var : '@button-primary'
+    - name: （成功）Success
+      key: 'btn-success'
+      var : '@button-success'
+    - name: （黑色) Black
+      key: 'btn-black'
+      var : '@btn-black'
+    - name: （危险）Danger
+      key: 'btn-danger'
+      var : '@button-danger'
+    - name:  (链接）Link
+      key: 'btn-link'
+      var : '@button-link'

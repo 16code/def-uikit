@@ -1,0 +1,18 @@
+/server
+test/
+.DS_Store
+*.DS_Store
+.AppleDouble
+.LSOverride
+.git
+.git/*
+*.bak
+.bowerrc
+/bower_components
+/node_modules
+build/
+dist/
+_site/
+# Thumbnails
+._*
+.font-spider

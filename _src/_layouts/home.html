@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include head.html %}
+  </head>
+  <body>
+    <!-- Docs master nav -->
+    <div class="container-fluid">
+        <div class="row">
+            {% include header.html %}
+        </div>
+        <div class="container">
+            <!-- Page content of course! -->
+            {{ content }}            
+        </div>
+
+
+        {% include footer.html %}
+    </div>
+  </body>
+</html>

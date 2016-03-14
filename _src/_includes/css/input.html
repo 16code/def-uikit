@@ -1,0 +1,105 @@
+<div class="group">
+    <h3 class="group-title">表单控件<small>(inputs)</small></h3>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6">
+            <h5>输入框</h5>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="默认状态">
+                    <span class="help-block">与表单控件相关的帮助文本</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="禁用状态" disabled>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="只读状态" readonly>
+                </div>
+                <div class="form-group has-success">
+                    <input type="text" class="form-control" placeholder="验证成功状态">
+                </div>
+                <div class="form-group has-error">
+                    <input type="text" class="form-control" placeholder="验证失败状态">
+                    <span class="help-block">验证失败状态提示文字</span>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">@</span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Username">
+                        <span class="input-group-addon">@example.com</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <h5>下拉框</h5>
+            <form>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>下拉选项框</option>
+                        <option>2</option>
+                    </select>
+                </div>
+                <div class="form-group has-error">
+                    <select class="form-control">
+                        <option>option...</option>
+                        <option>1</option>
+                    </select>
+                    <span class="help-block">请选择一个选项</span>
+                </div>
+                <h5>选项框</h5>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        <span>多选框 第一个选项</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        <span>多选框 第二个选项</span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="inlineRadioOptions">
+                        <span>单选框 第一个选项</span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="inlineRadioOptions">
+                        <span>单选框 第二个选项</span>
+                    </label>
+                </div>
+                <br>
+                <h5>内联单选和多选框</h5>
+                <div class="form-group">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option1" checked>
+                        <span>第一个选项</span>
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option1">
+                        <span>第二个选项</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" value="option1" checked>
+                        <span>第一个选项</span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" value="option1">
+                        <span>第二个选项</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

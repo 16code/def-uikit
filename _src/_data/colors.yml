@@ -1,0 +1,37 @@
+base_color:
+    - name: 主色调
+      key: '#2db4be'
+      var : '@brand-primary'
+
+    - name: 成功色
+      key: '#56bb2b'
+      var : '@brand-success'
+      
+    - name: 信息色
+      key: '#0ba1e4'
+      var : '@brand-info'
+
+    - name: 警告色
+      key: '#fdbaba'
+      var : '@brand-warning'
+      
+    - name: 错误色
+      key: '#fc4f54'
+      var : '@brand-danger'
+      
+    - name: 背景色
+      key: '#f0f3f4'
+      var : '@body-bg'
+      
+font_colors:
+    - name: 标题色
+      key: '#2e2e2e'
+      var : '@headings-color'
+      
+    - name: 内容色
+      key: '#808080'
+      var : '@text-color'
+      
+    - name: 辅助色
+      key: '#bbbbbb'
+      var : '@gray-light'

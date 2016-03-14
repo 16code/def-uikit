@@ -1,0 +1,46 @@
+<div class="group">
+    <h3 class="group-title">按钮<small>(Buttons)</small></h3>
+    <hr>
+    <div class="row">
+        <div class="col-sm-12">
+            <h5>通用按钮</h5>
+            <div class="row">
+                {% for button in site.data.button.base_button %}
+                <div class="col-sm-2">
+                    <div class="button-item">
+                        <button type="button" class="btn {{button.key}} btn-block">{{button.name}}</button>
+                        <button type="button" class="btn {{button.key}} btn-block hover">{{button.name}}</button>
+                        <button type="button" class="btn {{button.key}} btn-block disabled">{{button.name}}</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <h5>镂空按钮</h5>
+            <div class="row">
+                {% for button in site.data.button.base_button %}
+                <div class="col-sm-2">
+                    <div class="button-item">
+                        <button type="button" class="btn {{button.key}} btn-block btn-outline">{{button.name}}</button>
+                        <button type="button" class="btn {{button.key}} btn-block btn-outline hover">{{button.name}}</button>
+                        <button type="button" class="btn {{button.key}} btn-block btn-outline disabled">{{button.name}}</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5>尺寸</h5>
+                    <p>
+                        <button type="button" class="btn btn-primary btn-xs">（超小尺寸）Extra small button</button>
+                        <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
+                        <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
+                        <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    
+    
+    </div>
+</div>

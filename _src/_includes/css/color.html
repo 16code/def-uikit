@@ -1,0 +1,42 @@
+<div class="group">
+    <h3 class="group-title">颜色<small>(Colors)</small></h3>
+    <hr>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>基色<small>(Base Color)</small></h4>
+                </div>
+                {% for color in site.data.colors.base_color %}
+                <div class="col-sm-4">
+                    <div class="color text-center">
+                        <div class="color-box" style="background:{{ color.key }}">{{color.key}}</div>
+                        <p>{{ color.name }}</p>
+                        <p>{{color.var}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>字体颜色<small>(Font Color)</small></h4>
+                </div>
+                
+                {% for color in site.data.colors.font_colors %}
+                <div class="col-sm-12">
+                    <div class="color font text-center">
+                        <div class="color-box" style="background:{{ color.key }}">
+                            {{color.key}}
+                            {{ color.name }}
+                            {{color.var}}
+                        </div>
+    
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
