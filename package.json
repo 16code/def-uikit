@@ -2,7 +2,7 @@
   "name": "uikit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./_src/bootstrap.css",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-connect": "^1.0.0",

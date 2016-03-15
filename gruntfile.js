@@ -44,7 +44,7 @@ module.exports = function (grunt) {
             },
             files: [
                 {
-                  "./_src/css/bootstrap.css" : "./_src/_less/bootstrap.less"
+                  "./_src/css/ui.css" : "./_src/_less/bootstrap.less"
                 },
                 {
                    "./_src/css/doc.css" : "./_src/_less/doc.less"
