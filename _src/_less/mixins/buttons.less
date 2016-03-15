@@ -109,11 +109,15 @@
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
+        color:fade(@color, 75%);
     &:hover,
     &:focus,
     &.focus {
-      background-color: @background;
-          border-color: @border;
+        background-color: @background;
+        border-color: @border;
+        &::before {
+            border-color: rgba(0,0,0,0);
+        }
     }
   }
 
