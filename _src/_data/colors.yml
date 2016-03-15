@@ -4,7 +4,7 @@ base_color:
       var : '@brand-primary'
 
     - name: 成功色
-      key: '#56bb2b'
+      key: '#2ebf80'
       var : '@brand-success'
       
     - name: 信息色
