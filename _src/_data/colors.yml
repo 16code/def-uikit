@@ -35,3 +35,17 @@ font_colors:
     - name: 辅助色
       key: '#bbbbbb'
       var : '@gray-light'
+
+demo_colors:
+    - name: default
+      number : 1
+    - name: primary
+      number : 9
+    - name: success
+      number : 99
+    - name: info
+      number : 22
+    - name: warning
+      number : 7
+    - name: danger
+      number : 11

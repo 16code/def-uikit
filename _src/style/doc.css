@@ -10,9 +10,6 @@
   align-items: center;
   min-height: 30vh;
 }
-.banner.home  {
-    height: 100vh;
-}
 .banner h1 {
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -38,6 +35,11 @@
   font-size: 90%;
   color: #c7254e;
   background-color: #f9f2f4;
+  border-radius: 4px;
+}
+.doc code {
+  color: #5d9cec;
+  background-color: #f4f8fb;
   border-radius: 4px;
 }
 .doc code,

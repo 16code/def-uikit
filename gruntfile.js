@@ -18,7 +18,7 @@ module.exports = function (grunt) {
             files: [
                 '_src/_config.yml',
                 '_src/_data/**',
-                '_src/index.html',
+                '_src/**.html',
                 '_src/_layouts/**',
                 '_src/_posts/**',
                 '_src/_includes/**',
@@ -44,10 +44,10 @@ module.exports = function (grunt) {
             },
             files: [
                 {
-                  "./_src/css/ui.css" : "./_src/_less/bootstrap.less"
+                  "./_src/style/ui.css" : "./_src/_less/bootstrap.less"
                 },
                 {
-                   "./_src/css/doc.css" : "./_src/_less/doc.less"
+                   "./_src/style/doc.css" : "./_src/_less/doc.less"
                 }
             ]
         }

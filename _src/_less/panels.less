@@ -279,3 +279,84 @@
 .panel-danger {
   .panel-variant(@panel-danger-border; @panel-danger-text; @panel-danger-heading-bg; @panel-danger-border);
 }
+
+// panel border
+.panel {
+    &.panel-border {
+        .panel-heading {
+            padding: @panel-border-heading-padding;
+        }
+        box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        border-top-width: 3px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        &.panel-default .panel-heading {
+            background-color: transparent;
+            color:fade(@panel-default-border,70%);
+            border-bottom-width:0;
+        }
+        &.panel-primary .panel-heading {
+            background-color: transparent;
+            color:@brand-primary;
+            border-bottom-width:0;
+        }
+        &.panel-success .panel-heading {
+            background-color: transparent;
+            color:@brand-success;
+            border-bottom-width:0;
+        }
+        &.panel-danger .panel-heading {
+            background-color: transparent;
+            color:@brand-danger;
+            border-bottom-width:0;
+        }
+    }
+}
+.panel-tabs {
+    .panel-heading {
+        .panel-title {
+            line-height: 1.4;
+        }
+    }
+}
+.panel-tabs .nav-pills {
+    float: right;
+    >li {
+        float: left;
+        > a {
+            border-radius: 4px;
+            line-height: 1.2;
+            padding: 9px 15px;
+            border: 1px solid rgba(0,0,0,0);
+            border-bottom-width: 0;
+        }
+        a {
+            background-color          : transparent ;
+            font-weight               : 500;
+            border-bottom-left-radius : 0;
+            border-bottom-right-radius: 0;
+            color                     : #ffffff ;
+        }
+        &.active {
+            a {
+                background-color: #fff;
+                color           : @text-color;
+
+            }
+        }
+    }
+}
+.panel-tabs.panel-default .nav-pills {
+    >li {
+        a {
+            color: @text-color;
+        }
+    }
+    > li.active a {
+        border-color:#E5E7E8;
+        
+    }
+}

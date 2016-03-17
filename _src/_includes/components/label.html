@@ -2,13 +2,52 @@
     <h3 class="group-title">标签<small>(label)</small></h3>
     <hr>
     <div class="row">
-        <div class="col-sm-12">
-            <span class="label label-default">Default</span>
-            <span class="label label-primary">Primary</span>
-            <span class="label label-success">Success</span>
-            <span class="label label-info">Info</span>
-            <span class="label label-warning">Warning</span>
-            <span class="label label-danger">Danger</span>
+        <div class="col-sm-6">
+            {% for color in site.data.colors.demo_colors %}
+            <span class="label text-capitalize label-{{color.name}}">{{color.name}}</span>
+            {% endfor %}
+            <br>
+            {% for color in site.data.colors.demo_colors %}
+            <span class="label text-capitalize label-{{color.name}} label-rounded">{{color.name}}</span>
+            {% endfor %}
+        </div>
+        <div class="col-sm-6">
+            {% for color in site.data.colors.demo_colors %}
+            <span class="badge badge-{{color.name}}">{{color.number}}</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+        
+<div class="group">
+    <h3 class="group-title">图片<small>(images)</small></h3>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                {% for image in site.data.images.images %}
+                <div class="col-sm-4">
+                    <img src="{{ image.path | prepend: site.baseurl }}" class="{{image.class}} img-responsive" width="200">
+                    <p>
+                        <code>.{{image.class}}</code>
+                    </p>
+                </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                {% for image in site.data.images.images %}
+                <div class="col-sm-4">
+                    <img src="{{ image.path | prepend: site.baseurl }}" class="{{image.thumb}} img-responsive" width="200">
+                    <p>
+                        <code>.{{image.thumb}}</code>
+                    </p>
+                </div>
+                {% endfor %}
+
+            </div>
         </div>
     </div>
 </div>

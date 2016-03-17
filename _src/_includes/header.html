@@ -1,8 +1,13 @@
-<header class="banner">
+<header{% if page.layout == "home" %} class="banner home" {% else %} class="banner" {% endif %}>
+    {% include nav/main.html %}
     <div class="container">
         <div class="col-md-10 col-md-offset-1">
             <div class="banner-text text-center">
-                <h1>defara ui style guide</h1>
+                {% if page.title %}
+                  <h1>{{page.title}}</h1>
+                {% else %}
+                  <h1>defara ui style guide</h1>
+                {% endif %}
             </div>
         </div>
     </div>

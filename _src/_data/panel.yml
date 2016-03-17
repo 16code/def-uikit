@@ -1,0 +1,20 @@
+default_panel:
+    - name: panel DEFAULT
+      type: 'default'
+    - name: panel primary
+      type: 'primary'
+
+border_panel:
+    - name: panel DEFAULT
+      type: 'default'
+    - name: panel primary
+      type: 'primary'
+    - name: panel success
+      type: 'success'
+    - name: panel danger
+      type: 'danger'
+table_panel:
+    - name: panel DEFAULT
+      type: 'default'
+    - name: panel danger
+      type: 'danger'

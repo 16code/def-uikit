@@ -1,0 +1,54 @@
+.portlet {
+    background: #fff;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+    transition: 1s ease-in-out;
+    margin-bottom: 20px;
+    .portlet-heading {
+        padding: @panel-heading-padding;
+        color: #fff;
+        &:extend(.clearfix all);
+        a {
+            color: inherit;
+            padding: 0px 5px;
+            font-weight: normal;
+            text-decoration: none;
+        }
+    }
+    .portlet-title {
+        float: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 1.1;
+        color: inherit;
+    }
+    .portlet-widgets {
+        line-height: 1.1;
+        display: inline-block;
+        float: right;
+        padding-left: 15px;
+        position: relative;
+        text-align: right;
+    }
+    .portlet-body {
+        background: #ffffff;
+        padding: 15px;
+    }
+}
+.portlet-heading.portlet-default {
+    .portlet-title  {
+        color: @headings-color;
+    }
+    a {
+        color: #999;
+    }
+}
+.portlet .portlet-primary {
+    background: @brand-primary;
+}
+.portlet .portlet-success {
+    background: @brand-success;
+}
+.portlet .portlet-danger {
+    background: @brand-danger;
+}

@@ -1,0 +1,10 @@
+images:
+    - class : img-rounded
+      path : /images/img1.jpg
+      thumb: thumb-lg
+    - class : img-circle
+      path : /images/img4.jpg
+      thumb: thumb-md
+    - class : img-thumbnail
+      path : /images/img3.jpg
+      thumb: thumb-sm

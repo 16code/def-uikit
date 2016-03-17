@@ -1,173 +1,61 @@
 <div class="group">
-    <h3 class="group-title">组件<small>(components)</small></h3>
+    <h3 class="group-title">面板<small>(panels)</small></h3>
     <hr>
     <div class="row">
+        {% for panel in site.data.panel.border_panel %}
+        <div class="col-sm-3">
+            <div class="panel panel-{{panel.type}}">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-uppercase">{{panel.name}}</h3>
+                </div>
+                <div class="panel-body">{{site.panelcontent}}</div>
+            </div>
+        </div>
+        {% endfor %}
+        {% for panel in site.data.panel.border_panel %}
+        <div class="col-sm-3">
+            <div class="panel panel-border panel-{{panel.type}}">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-uppercase">{{panel.name}}</h3>
+                </div>
+                <div class="panel-body">{{site.panelcontent}}</div>
+            </div>
+        </div>
+        {% endfor %}
+        {% for panel in site.data.panel.border_panel %}
+        <div class="col-sm-3">
+            <div class="portlet">
+                <div class="portlet-heading portlet-{{panel.type}}">
+                    <h3 class="portlet-title text-uppercase">portlet</h3>
+                    <div class="portlet-widgets">
+                        <a href="javascript:;">X</a>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    {{site.panelcontent}}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        
+        {% for panel in site.data.panel.table_panel %}
         <div class="col-sm-6">
-            <h5>面板(default)</h5>
-            <div class="panel panel-default">
+            <div class="panel panel-tabs panel-{{panel.type}}">
                 <div class="panel-heading">
-                    <h3 class="panel-title">面板标题</h3>
+                    <ul class="nav nav-pills pull-right">
+                        <li class="active">
+                            <a href="javascript:">Tab One</a>
+                        </li>
+                        <li><a href="javascript:">Tab Two</a></li>
+                        <li><a href="javascript:">Tab Three</a></li>
+                    </ul>
+                    <h3 class="panel-title text-uppercase">{{panel.name}}</h3>
                 </div>
-                <div class="panel-body">内容区</div>
+                <div class="panel-body">{{site.panelcontent}}</div>
             </div>
         </div>
-        <div class="col-sm-6">
-            <h5>面板(primary)</h5>
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">面板标题</h3>
-                </div>
-                <div class="panel-body">内容区</div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <h5>实例(example)</h5>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">表单</h3>
-                </div>
-                <div class="panel-body">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">邮箱</label>
-                            <div class="col-sm-9">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">性别</label>
-                            <div class="col-sm-9">
-                                <label class="radio-inline">
-                                    <input type="radio" name="inlineRadioOptions" value="男" checked>
-                                    <span>男</span>
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="inlineRadioOptions" value="女">
-                                    <span>女</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">分类</label>
-                            <div class="col-sm-9">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <select class="form-control">
-                                            <option>请选择主分类</option>
-                                            <option>2</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <select class="form-control">
-                                            <option>请选择子分类</option>
-                                            <option>2</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">是否生产过</label>
-                            <div class="col-sm-9">
-                                <label class="radio-inline">
-                                    <input type="radio" name="inlineRadioOptions" value="男" checked>
-                                    <span>是</span>
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="inlineRadioOptions" value="女">
-                                    <span>否</span>
-                                </label>
-                                <div>
-                                    <select class="form-control">
-                                        <option>请选择产品</option>
-                                        <option>2</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">金额</label>
-                            <div class="col-sm-9">
-                                <div class="input-group">
-                                    <span class="input-group-addon">¥</span>
-                                    <input type="text" class="form-control" placeholder="RMB">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">合作工厂</label>
-                            <div class="col-sm-9">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" value="option1" checked>
-                                    <span>工厂A</span>
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" value="option1">
-                                    <span>工厂B</span>
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" value="option1">
-                                    <span>工厂ABCDEFG</span>
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" value="option1">
-                                    <span>工厂ABCDEFG</span>
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" value="option1">
-                                    <span>工厂ABCDEFG</span>
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" value="option1">
-                                    <span>工厂ABCDEFG</span>
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" value="option1">
-                                    <span>工厂ABCDEFG</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label required">必填内容</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control">
-                                <span class="help-block">我是表单帮助说明文字</span>
-                            </div>
-                        </div>
-                        <div class="form-group has-error">
-                            <label class="col-sm-2 control-label required">错误内容</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control">
-                                <span class="help-block">填写内容不正确</span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">备注</label>
-                            <div class="col-sm-9">
-                                <textarea class="form-control" rows="4"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group disabled-border">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="">
-                                        <span>我已阅读并同意用户协议</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group disabled-border">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-primary">提交表单</button>
-                                <button type="submit" class="btn btn-default">重新填写</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
+
+
     </div>
 </div>
